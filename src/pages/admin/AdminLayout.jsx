@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
 import {
   LayoutDashboard, FileText, Tag, Settings, MessageSquare,
-  Menu, X, ChevronRight, ExternalLink, Layers, Newspaper
+  Menu, X, ChevronRight, ExternalLink, Layers, Newspaper, Users
 } from "lucide-react";
 import { BRAND_LOGO, BRAND_NAME } from "@/lib/brand";
 
@@ -13,6 +13,7 @@ const NAV_ITEMS = [
   { label: "Categorie", path: "/admin/categorie", icon: Tag },
   { label: "News", path: "/admin/news", icon: Newspaper },
   { label: "Messaggi", path: "/admin/messaggi", icon: MessageSquare },
+  { label: "Utenti", path: "/admin/utenti", icon: Users },
   { label: "Impostazioni", path: "/admin/impostazioni", icon: Settings },
 ];
 

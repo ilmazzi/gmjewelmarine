@@ -190,6 +190,28 @@ const entities = entityNames.reduce((acc, entity) => {
 
 export const api = {
   entities,
+  users: {
+    list() {
+      return request("/users");
+    },
+    create(data) {
+      return request("/users", {
+        method: "POST",
+        body: JSON.stringify(data),
+      });
+    },
+    update(id, data) {
+      return request(`/users/${id}`, {
+        method: "PUT",
+        body: JSON.stringify(data),
+      });
+    },
+    delete(id) {
+      return request(`/users/${id}`, {
+        method: "DELETE",
+      });
+    },
+  },
   auth: {
     async loginViaEmailPassword(email, password) {
       const data = await request("/auth/login", {

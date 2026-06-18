@@ -30,6 +30,7 @@ import AdminMessages from '@/pages/admin/AdminMessages';
 import AdminSettings from '@/pages/admin/AdminSettings';
 import AdminBrands from '@/pages/admin/AdminBrands';
 import AdminNews from '@/pages/admin/AdminNews';
+import AdminUsers from '@/pages/admin/AdminUsers';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError } = useAuth();
@@ -75,6 +76,7 @@ const AuthenticatedApp = () => {
           <Route path="messaggi" element={<AdminMessages />} />
           <Route path="marchi" element={<AdminBrands />} />
           <Route path="news" element={<AdminNews />} />
+          <Route path="utenti" element={<AdminUsers />} />
           <Route path="impostazioni" element={<AdminSettings />} />
         </Route>
       </Route>
