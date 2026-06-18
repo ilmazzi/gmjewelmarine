@@ -1,0 +1,32 @@
+{
+  "name": "Category",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome categoria"
+    },
+    "slug": {
+      "type": "string",
+      "description": "Slug URL"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icona lucide o emoji"
+    },
+    "description": {
+      "type": "string"
+    },
+    "sort_order": {
+      "type": "integer",
+      "default": 0
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

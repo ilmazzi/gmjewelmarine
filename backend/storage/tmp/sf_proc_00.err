@@ -1,0 +1,32 @@
+[Fri Jun 12 16:54:15 2026] PHP 8.4.20 Development Server (http://127.0.0.1:8000) started
+[Fri Jun 12 16:54:31 2026] 127.0.0.1:50840 Accepted
+[Fri Jun 12 16:54:32 2026] 127.0.0.1:50840 Closing
+[Fri Jun 12 16:54:33 2026] 127.0.0.1:50844 Accepted
+[Fri Jun 12 16:54:33 2026] PHP Warning:  PHP Request Startup: Unable to create temporary file, Check permissions in temporary files directory. in Unknown on line 0
+[Fri Jun 12 16:54:33 2026] PHP Warning:  PHP Request Startup: POST data can't be buffered; all data discarded in Unknown on line 0
+[Fri Jun 12 16:54:33 2026] PHP Fatal error:  Uncaught ErrorException: Cannot modify header information - headers already sent in C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\symfony\http-foundation\Response.php:328
+Stack trace:
+#0 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(263): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Cannot modify h...', 'C:\\Users\\Mazzi\\...', 328)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():262}(2, 'Cannot modify h...', 'C:\\Users\\Mazzi\\...', 328)
+#2 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\symfony\http-foundation\Response.php(328): header('HTTP/1.0 500 In...', true, 500)
+#3 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\symfony\http-foundation\Response.php(407): Symfony\Component\HttpFoundation\Response->sendHeaders()
+#4 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(226): Symfony\Component\HttpFoundation\Response->send()
+#5 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(203): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(ErrorException))
+#6 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(263): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#7 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():262}(Object(ErrorException))
+#8 {main}
+  thrown in C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\symfony\http-foundation\Response.php on line 328
+[Fri Jun 12 16:54:33 2026] PHP Fatal error:  Uncaught ErrorException: Cannot modify header information - headers already sent in C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\symfony\http-foundation\Response.php:328
+Stack trace:
+#0 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(263): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Cannot modify h...', 'C:\\Users\\Mazzi\\...', 328)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():262}(2, 'Cannot modify h...', 'C:\\Users\\Mazzi\\...', 328)
+#2 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\symfony\http-foundation\Response.php(328): header('HTTP/1.0 500 In...', true, 500)
+#3 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\symfony\http-foundation\Response.php(407): Symfony\Component\HttpFoundation\Response->sendHeaders()
+#4 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(226): Symfony\Component\HttpFoundation\Response->send()
+#5 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(203): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#6 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(239): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#7 C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(263): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():262}()
+#9 {main}
+  thrown in C:\Users\Mazzi\Herd\jewelmarine\backend\vendor\symfony\http-foundation\Response.php on line 328
+[Fri Jun 12 16:54:33 2026] 127.0.0.1:50844 Closing

@@ -1,0 +1,26 @@
+{
+  "name": "SiteSettings",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "Chiave impostazione univoca"
+    },
+    "value": {
+      "type": "string",
+      "description": "Valore (JSON o testo)"
+    },
+    "label": {
+      "type": "string",
+      "description": "Etichetta leggibile"
+    },
+    "group": {
+      "type": "string",
+      "description": "Gruppo: company, hero, seo, social, contact"
+    }
+  },
+  "required": [
+    "key",
+    "value"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "News",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Titolo dell'articolo"
+    },
+    "slug": {
+      "type": "string",
+      "description": "Slug URL"
+    },
+    "excerpt": {
+      "type": "string",
+      "description": "Breve descrizione/anteprima"
+    },
+    "content": {
+      "type": "string",
+      "description": "Contenuto completo (HTML)"
+    },
+    "cover_image": {
+      "type": "string",
+      "description": "URL immagine di copertina"
+    },
+    "is_published": {
+      "type": "boolean",
+      "default": true
+    },
+    "published_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Data di pubblicazione"
+    },
+    "sort_order": {
+      "type": "integer",
+      "default": 0
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

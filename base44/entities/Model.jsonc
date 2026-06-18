@@ -1,0 +1,26 @@
+{
+  "name": "Model",
+  "type": "object",
+  "properties": {
+    "brand_id": {
+      "type": "string",
+      "description": "ID del brand di appartenenza"
+    },
+    "name": {
+      "type": "string",
+      "description": "Nome del modello"
+    },
+    "sort_order": {
+      "type": "integer",
+      "default": 0
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "brand_id",
+    "name"
+  ]
+}
